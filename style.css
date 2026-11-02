@@ -1,0 +1,206 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url("pajak.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header, nav, main, footer {
+    width: 90%;
+    max-width: 1080px;
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+header {
+    min-height: 100px;
+    padding: 20px;
+}
+
+nav {
+    min-height: 60px;
+    padding: 15px;
+}
+
+main {
+    min-height: auto;
+    padding: 25px;
+}
+
+footer {
+    min-height: 60px;
+    padding: 15px;
+}
+
+a {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 3px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+a:hover {
+    background: rgba(255, 0, 0, 0.2);
+    box-shadow: 0 0 15px red;
+    border-color: red;
+}
+
+main h3 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px red;
+}
+
+form {
+    margin-bottom: 30px;
+    color: white;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid red;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+}
+
+select option {
+    background: #111;
+    color: white;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    margin-left: 10px;
+    color: white;
+    background: rgba(150, 0, 0, 0.7);
+    border: 1px solid red;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: red;
+    box-shadow: 0 0 18px red;
+}
+
+.zdj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.zdj img {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.zdj img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px red;
+}
+.dynia {
+    width: 60%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+.dynia:hover {
+    box-shadow: 0 0 22px red;
+    transform: scale(1.02);
+}
+
+label[for="ilosc"] {
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 90px;
+    padding: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 0, 0, 0.7);
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: red;
+    box-shadow: 0 0 15px red;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    filter: invert(1);
+}
+label[for="suma"] {
+    display: inline-block;
+    margin: 10px;
+    color: white;
+    font-size: 16px;
+
+}
+
+#suma {
+    width: 150px;
+    padding: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 0, 0, 0.7);
+    border-radius: 6px;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    
+}

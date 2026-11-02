@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALLOWEEN.HUB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sklep.js" defer></script>
+</head>
+<body>
+   <header>
+    <h1>HALLOWEEN.HUB</h1>
+   </header>
+   <nav>
+    <a href="index.html">Home</a>
+    <a href="oblicz.html">Oblicz</a>
+    <a href="sklep.html">Sklep</a>
+    <a href="onas.html">O nas</a>
+   </nav>
+   <main>
+    <h3>Witaj w sklepie!</h3>
+
+    <form action="" method="post">
+        <label for="produkt">Wybierz produkt:</label>
+        <select name="produkt" id="produkt">
+            <option value="40">Wiaderko</option>
+            <option value="15">Cukierki</option>
+            <option value="12">Lizaki</option>
+            <option value="18">Praliny</option>
+            <option value="30">Słoik</option>
+            <option value="35">Miska</option>
+        </select>
+
+        <br><br>
+
+        <label for="ilosc">Ilość:</label>
+        <input type="number" name="ilosc" id="ilosc" min="1" value="1">
+
+        <br><br>
+
+        <label for="suma">Cena:</label>
+        <input type="text" id="suma" readonly>
+
+        <br><br>
+
+        <input type="submit" value="Zamów">
+    </form>
+</main>
+
+<script>
+    let produkt = document.getElementById("produkt");
+    let ilosc = document.getElementById("ilosc");
+    let suma = document.getElementById("suma");
+
+    function obliczCene() {
+        let cenaProduktu = parseFloat(produkt.value);
+        let liczbaProduktow = parseInt(ilosc.value) || 0;
+
+        suma.value = (cenaProduktu * liczbaProduktow).toFixed(2) + " zł";
+    }
+
+    produkt.addEventListener("change", obliczCene);
+    ilosc.addEventListener("input", obliczCene);
+
+    obliczCene();
+</script>
+
+    <div class="zdj">
+    <img src="img1.png" alt="img1">
+    <img src="img2.png" alt="img2">
+    <img src="img3.png" alt="img3">
+    <img src="img4.png" alt="img4">
+    <img src="img5.png" alt="img5">
+    <img src="img6.png" alt="img6">
+    </div>
+   </main>
+   <footer>
+        <p>© 2026 HALLOWEEN.HUB</p>
+    </footer>
+</body>
+</html>
+ 
